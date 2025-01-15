@@ -3,9 +3,9 @@ package assignment2;
 public class University {
 
     static String UniversityName;
-    static int totalStudents;
-    static int totalprofessor;
-    static int totaldepartmentheads;
+    static int totalStudents=0;
+    static int totalprofessor=0;
+    static int totaldepartmentheads=0;
 
     public static void setUniversityName(String universityName) {
         UniversityName = universityName;
@@ -24,17 +24,20 @@ public class University {
     }
 
     public static int getTotaldepartmentheads() {
+
         return totaldepartmentheads;
     }
 
     public static void incrementStudentCount(){
-        totalStudents=totalStudents+1;
+
+        totalStudents++;
     }
     public static void incrementProfessorCount(){
-        totalprofessor=totalprofessor+1;
+        totalprofessor++;
     }
     public static void incrementdepartmenthead()
     {
-        totaldepartmentheads=totaldepartmentheads+1;
+
+        totaldepartmentheads++;
     }
 }
